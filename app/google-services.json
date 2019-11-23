@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "154327225728",
+    "firebase_url": "https://chatpleasehere.firebaseio.com",
+    "project_id": "chatpleasehere",
+    "storage_bucket": "chatpleasehere.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:154327225728:android:57ad07541ad7fc60639d65",
+        "android_client_info": {
+          "package_name": "com.example.chatplease"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "154327225728-qebcga8agc5oeapterri28a5idrb419e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatplease",
+            "certificate_hash": "c046e07a67dcd91104532edcd9741a737e4534d7"
+          }
+        },
+        {
+          "client_id": "154327225728-p47bgfuuo4hcu4jf9ij91g90heqenh3d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW51ys8R0Y_6h2wwuQ2Pr8pnXHy3jitA0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "154327225728-p47bgfuuo4hcu4jf9ij91g90heqenh3d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

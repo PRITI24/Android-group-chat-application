@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Gupshup</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_settings">settings</string>
+    <string name="title_activity_profile">Profile</string>
+</resources>
