@@ -1,6 +1,5 @@
 package com.example.chatplease;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -29,7 +28,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager.widget.ViewPager;
@@ -47,18 +45,19 @@ import java.util.HashMap;
 import java.util.Iterator;
 
 
+import org.checkerframework.checker.nullness.qual.*;
+
 public class groupchatactivity extends AppCompatActivity {
 
     private Toolbar m;
     private ImageButton sendmessagebutton;
-    private EditText usermessageinput;
+    @Nullable private EditText usermessageinput;
     private ScrollView scroll;
     private TextView displaytextmessage;
     private  FirebaseAuth mAuth;
-    private DatabaseReference UserRef,GroupNameRef,GroupMessageKeyRef;
+    @Nullable private DatabaseReference UserRef,GroupNameRef,GroupMessageKeyRef;
 
-    private String currentGroupName,currentUserID, currentUserName, currentDate,currentTime;
-
+    @Nullable private String currentGroupName,currentUserID, currentUserName, currentDate,currentTime;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState) ;
@@ -130,8 +129,9 @@ public class groupchatactivity extends AppCompatActivity {
 
     private void SaveMessageInfoToDatabase()
     {
-        String message = usermessageinput.getText().toString();
-        String messageKey = GroupNameRef.push().getKey();
+       @Nullable String message = usermessageinput.getText().toString();
+       @Nullable String messageKey = GroupNameRef.push().getKey();
+
 
         if(TextUtils.isEmpty(message))
         {
