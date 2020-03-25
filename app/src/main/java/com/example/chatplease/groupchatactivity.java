@@ -129,8 +129,8 @@ public class groupchatactivity extends AppCompatActivity {
 
     private void SaveMessageInfoToDatabase()
     {
-       @Nullable String message = usermessageinput.getText().toString();
-       @Nullable String messageKey = GroupNameRef.push().getKey();
+        String message = usermessageinput.getText().toString();
+        String messageKey = GroupNameRef.push().getKey();
 
 
         if(TextUtils.isEmpty(message))
